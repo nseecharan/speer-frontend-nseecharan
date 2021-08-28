@@ -1,0 +1,20 @@
+button{
+    color: white;
+    border: none;
+    background: none;
+}
+.tryNowButton{
+    float: right;
+}
+.expConMenu{
+    float: left;
+    color: white;
+}
+.sectionMenu{
+    color: white;
+    padding: 1em;
+}
+.row{
+
+    --bs-gutter-x: 0px;
+}

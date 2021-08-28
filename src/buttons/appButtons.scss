@@ -1,0 +1,78 @@
+$bg-color: #222;
+$color-blur: 4em;
+
+[class*="btn-"] {
+  outline:0;
+  width: 248px;
+  height: 62px;
+  border-radius: 79px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  overflow: hidden;
+  position: relative; //absolute
+  -webkit-tap-highlight-color: transparent;
+  transition: all 500ms ease-in-out;
+  &::after, &::before { 
+    content: "";
+    position: absolute;
+  }
+  &:hover, &:focus {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+[class*="btn-mix"] {
+  &::after {
+    content: attr(data-text);
+    background: none;
+    color: #fff;
+    //position: relative;
+  }
+  &::before {
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: -6em 0em $color-blur 2em #1fe1e9, 
+                -2em 0em $color-blur 2em #5e33d1, 
+                2em 0em $color-blur 2em #d34848, 
+                6em 0em $color-blur 2em #ffb33f;
+    width: 0;
+    height: 0;
+    animation: mix 5s linear infinite;
+  }
+}
+
+@keyframes mix {
+  
+  30% {
+    box-shadow: -6em -4em $color-blur 5em #1fe1e9, 
+                -3em 0em $color-blur 5em #5e33d1, 
+                4em 1em $color-blur 2em #d34848, 
+                8em 0em $color-blur 6em #ffb33f;
+  }
+  
+  60% {
+    box-shadow: -5em 5em $color-blur 5em #1fe1e9, 
+    -4em -5em $color-blur 5em #5e33d1, 
+    6em -2em $color-blur 3em #d34848, 
+    6em 1em $color-blur 6em #ffb33f;
+  }
+
+}
+
+.white{
+  width: 248px;
+  height: 62px;
+  border-radius: 79px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  background: #FFFFFF;
+  opacity: 1;
+  color: black;
+  mix-blend-mode: screen;
+  &::after {
+    background: none;
+    content: attr(data-text);
+  }
+}
