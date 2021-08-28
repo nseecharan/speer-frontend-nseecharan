@@ -9,12 +9,16 @@ button{
 .expConMenu{
     float: left;
     color: white;
+    text-align: left;
+    letter-spacing: 4.8px;
+    opacity: 1;
+    font-size: 48px;
+    line-height: 57px;
 }
 .sectionMenu{
     color: white;
     padding: 1em;
-}
-.row{
-
-    --bs-gutter-x: 0px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }

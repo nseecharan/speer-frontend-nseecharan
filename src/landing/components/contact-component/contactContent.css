@@ -1,0 +1,11 @@
+.emailLink{
+    padding: 10em;
+}
+.footer{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    margin: auto;
+    width: 100%;
+}

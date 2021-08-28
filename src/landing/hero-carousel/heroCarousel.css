@@ -2,21 +2,21 @@
 
     background-image: url('../../images/Image 1.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     min-height: 1080px;
 }
 .slide2{
 
     background-image: url('../../images/Image 2.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     min-height: 1080px;
 }
 .slide3{
 
     background-image: url('../../images/Image 3.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     min-height: 1080px;
 }
 .carouselArea{

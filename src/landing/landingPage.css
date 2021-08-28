@@ -1,4 +1,28 @@
-.row{
+.red{
+    background-color:#D34848;
+  }
+  
+  .blue{
+    background-color:#1FE1E9 ;
+  }
+  
+  .yellow{
+    background-color:#FFB33F;
+  }
 
-    --bs-gutter-x: 0px;
-}
+  .purple{
+
+    background-color:#5E33D1;
+  }
+  
+  .black{
+    background-color: #191919;
+  }
+  .sectionArea{
+  
+    min-height: 1080px;
+  }
+  .contactArea{
+  
+    min-height: 538px;
+  }

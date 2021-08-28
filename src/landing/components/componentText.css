@@ -1,0 +1,82 @@
+.subTitle{
+    width: 831px;
+    margin: 1em auto;
+}
+.smallText{
+    width: 433px;
+    margin: 1em auto;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+/*the vairous text dimensions for the section content*/
+.s24{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2.4px; 
+}
+.s32{
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 2.2px;/*3.2*/
+}
+.s35{
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 3.5px;
+}
+.s48{
+
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: 4.8px;
+}
+.s51-62{
+    font-size: 51px;
+    line-height: 62px;
+    letter-spacing: 5.1px;
+}
+.s51-61{
+    font-size: 51px;
+    line-height: 61px;
+    letter-spacing: 5.1px;
+}
+.s65{
+    font-size: 65px;
+    line-height: 79px;
+    letter-spacing: 6.5px;
+}
+.s74{
+    font-size: 74px;
+    line-height: 90px;
+    letter-spacing: 7.4px; 
+}
+.whiteText{
+    color: white;
+}
+.blackText{
+    color: black;
+}
+.redText{
+    color:#D34848;
+}
+  
+.blueText{
+    color:#1FE1E9 ;
+}
+  
+.yellowText{
+    color:#FFB33F;
+}
+  
+.purpleText{
+  
+    color:#5E33D1;
+}
+  
+.blackText{
+    color: #191919;
+}

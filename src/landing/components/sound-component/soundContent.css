@@ -1,0 +1,32 @@
+.soundText{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    width: 60%;
+    margin: 22em auto;
+    padding: 3em;
+}
+.speakerDisplay{
+
+    left: 55%;
+    padding-top: 8em;
+    position: absolute;
+}
+.rSpeaker{
+
+    padding-top: 15em;
+}
+.lSpeaker,.rSpeaker{
+    width: 20vw;
+}
+.audioButton{
+
+    border: 2px solid white;
+    border-radius: 100px;
+    width: 7em;
+    height: 7em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 33em;
+    margin-left: 15em;
+}

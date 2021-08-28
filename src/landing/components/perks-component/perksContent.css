@@ -1,0 +1,31 @@
+.perksText{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    margin: 15em auto;
+}
+.column{
+
+    width: 100%;
+    max-width: 433px; 
+}
+td, th{
+    padding: 0em 1.5em;
+}
+h3{
+    display: table-caption;
+    margin-bottom: 5em;
+}
+table{
+
+    margin: auto;
+    max-width: 90%;
+}
+.perksTitle{
+
+    margin-bottom: 2em;
+    padding-left: 5em;
+}
+
+/*create media breakpoint*/

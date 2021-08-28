@@ -10,7 +10,7 @@ $color-blur: 4em;
   font-weight: bold;
   letter-spacing: 1.8px;
   overflow: hidden;
-  position: relative; //absolute
+  position: relative;
   -webkit-tap-highlight-color: transparent;
   transition: all 500ms ease-in-out;
   &::after, &::before { 
@@ -18,7 +18,7 @@ $color-blur: 4em;
     position: absolute;
   }
   &:hover, &:focus {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1);
   }
 }
 
@@ -27,7 +27,11 @@ $color-blur: 4em;
     content: attr(data-text);
     background: none;
     color: #fff;
-    //position: relative;
+    top: 0%;
+    left: 0%;
+    padding-top: 1.2em;
+    width: inherit;
+    height: inherit;
   }
   &::before {
     background: transparent;
@@ -44,23 +48,22 @@ $color-blur: 4em;
 
 @keyframes mix {
   
-  30% {
+  25% {
     box-shadow: -6em -4em $color-blur 5em #1fe1e9, 
                 -3em 0em $color-blur 5em #5e33d1, 
                 4em 1em $color-blur 2em #d34848, 
                 8em 0em $color-blur 6em #ffb33f;
   }
   
-  60% {
+  50% {
     box-shadow: -5em 5em $color-blur 5em #1fe1e9, 
     -4em -5em $color-blur 5em #5e33d1, 
     6em -2em $color-blur 3em #d34848, 
     6em 1em $color-blur 6em #ffb33f;
   }
-
 }
 
-.white{
+.whiteButton{
   width: 248px;
   height: 62px;
   border-radius: 79px;
@@ -69,10 +72,30 @@ $color-blur: 4em;
   letter-spacing: 1.8px;
   background: #FFFFFF;
   opacity: 1;
-  color: black;
-  mix-blend-mode: screen;
   &::after {
     background: none;
     content: attr(data-text);
   }
 }
+
+.redText{
+  color:#D34848;
+}
+
+.blueText{
+  color:#1FE1E9 ;
+}
+
+.yellowText{
+  color:#FFB33F;
+}
+
+.purpleText{
+
+  color:#5E33D1;
+}
+
+.blackText{
+  color: #191919;
+}
+
