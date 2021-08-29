@@ -1,7 +1,7 @@
 import React from 'react';
-import './heroCarousel.css'
 import Carousel from 'react-bootstrap/Carousel';
-import HeroContent from '../components/hero-component/HeroContent';
+import './heroCarousel.css'
+import HeroContent from '../../components/hero-component/HeroContent';
 
 const HeroCarousel = () => {
 

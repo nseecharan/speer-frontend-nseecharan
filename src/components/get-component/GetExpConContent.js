@@ -1,5 +1,5 @@
 import React from 'react';
-import AppButton from '../../../buttons/AppButton';
+import AppButton from '../../buttons/AppButton';
 import './getExpConContent.css';
 import '../componentText.css';
 
@@ -14,7 +14,10 @@ const GetExpConContent = () => {
                     <h6 className="whiteText s51-61">Purchase and download the app.</h6>
                 </div>
                 <div className="buyButton">
-                    <AppButton buttonStyle="special" textColor="red"></AppButton>
+                    <AppButton 
+                    buttonStyle="special" 
+                    textColor="red"
+                    redirect="/pricing"/>
                 </div>
             </div>
         </div>

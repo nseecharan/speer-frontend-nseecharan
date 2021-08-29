@@ -1,28 +1,32 @@
 .red{
     background-color:#D34848;
-  }
+}
   
-  .blue{
+.blue{
     background-color:#1FE1E9 ;
-  }
+}
   
-  .yellow{
+.yellow{
     background-color:#FFB33F;
-  }
+}
 
-  .purple{
+.purple{
 
     background-color:#5E33D1;
-  }
+}
   
-  .black{
+.black{
     background-color: #191919;
-  }
-  .sectionArea{
+}
+.sectionArea{
   
     min-height: 1080px;
-  }
-  .contactArea{
+}
+.contactArea{
   
     min-height: 538px;
-  }
+}
+.pricingArea{
+
+    min-height: 1890px;
+}

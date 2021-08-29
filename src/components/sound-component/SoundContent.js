@@ -1,7 +1,7 @@
 import React from 'react';
-import leftSpeaker from '../../../images/medium17.png';
-import rightSpeaker from '../../../images/medium27.png';
-import AppButton from '../../../buttons/AppButton';
+import leftSpeaker from '../../images/medium17.png';
+import rightSpeaker from '../../images/medium27.png';
+import AppButton from '../../buttons/AppButton';
 import '../componentText.css';
 import './soundContent.css';
 
