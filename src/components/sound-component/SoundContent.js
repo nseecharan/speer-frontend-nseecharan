@@ -15,8 +15,8 @@ const SoundContent = () => {
             </div>
             <div className="speakerDisplay">
                 <button className="audioButton">CLICK</button>
-                <img className="lSpeaker" src={leftSpeaker} alt="left speaker image" />
-                <img className="rSpeaker" src={rightSpeaker} alt="right speaker image" />
+                <img className="lSpeaker" src={leftSpeaker} alt="left speaker" />
+                <img className="rSpeaker" src={rightSpeaker} alt="right speaker" />
             </div>
         </div>
     );
