@@ -17,13 +17,18 @@ const LandingPage = () => {
     return (
         <div className="landingPage">
             <div className="red sectionArea">
-                <SectionMenu />
+                <SectionMenu
+                    menuTextColor="white"
+                    menuBackground="blue"
+                />
                 <HeroCarousel></HeroCarousel>
             </div>
             <div className="red sectionArea">
                 <SectionMenu
                     button={buttonStyles.redOnWhite}
                     buttonText={buttonStyles.text.tryNow}
+                    menuTextColor="red"
+                    menuBackground="black"
                 />
                 <SoundContent />
             </div>
@@ -31,12 +36,17 @@ const LandingPage = () => {
                 <SectionMenu
                     button={buttonStyles.yellowOnWhite}
                     buttonText={buttonStyles.text.tryNow}
+                    menuTextColor="yellow"
+                    menuBackground="black"
                 ></SectionMenu>
             </div>
             <div className="black perksArea">
                 <SectionMenu
                     button={buttonStyles.special}
                     buttonText={buttonStyles.text.tryNow}
+                    menuTextColor="white"
+                    menuBackground="blue"
+                    disablePerks="true"
                 />
                 <OptionsContent
                     optionData={perksData}
@@ -49,11 +59,16 @@ const LandingPage = () => {
                 <SectionMenu
                     button={buttonStyles.blueOnWhite}
                     buttonText={buttonStyles.text.tryNow}
+                    menuTextColor="blue"
+                    menuBackground="black"
                 ></SectionMenu>
                 <ReviewsContent />
             </div>
             <div className="black sectionArea">
-                <SectionMenu></SectionMenu>
+                <SectionMenu
+                    menuTextColor="white"
+                    menuBackground="blue"
+                ></SectionMenu>
                 <GetExpConContent />
             </div>
             <div className="purple contactArea">

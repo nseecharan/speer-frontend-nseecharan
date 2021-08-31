@@ -6,7 +6,7 @@ $blue-color: #1fe1e9;
 $purple-color: #5e33d1;
 $white-color: white;
 $black-color: #191919;
-$fuchsia-color:#D1346E;
+$fuchsia-color: #d1346e;
 
 [class*="btn-"] {
   outline: 0;
@@ -73,11 +73,35 @@ $fuchsia-color:#D1346E;
   font-weight: bold;
   letter-spacing: 1.8px;
   opacity: 1;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+
   &::after {
     background: none;
     content: attr(data-text);
   }
 }
+.standard::before {
+  --size: 0;
+  content: '';
+  //position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.standard:hover::before {
+  --size: 400px;
+}
+
+/*white button hover effect*/
+
 
 .white {
   background: $white-color;
@@ -101,7 +125,6 @@ $fuchsia-color:#D1346E;
 .redText {
   color: $red-color;
 }
-
 .blueText {
   color: $blue-color;
 }
@@ -109,15 +132,12 @@ $fuchsia-color:#D1346E;
 .yellowText {
   color: $yellow-color;
 }
-
 .purpleText {
   color: $purple-color;
 }
-
 .blackText {
   color: $black-color;
 }
-.fuchsiaText{
-
+.fuchsiaText {
   color: $fuchsia-color;
 }

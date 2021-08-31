@@ -15,19 +15,26 @@ const Pricing = () => {
 
         <div className="landingPage">
             <div className="black pricingArea">
-                <SectionMenu />
+                <SectionMenu
+                    menuTextColor="white"
+                    menuBackground="blue"
+                />
                 <OptionsContent
                     optionData={pricingData}
                     headingColors={["red", "yellow", "blue"]}
                     detailsColor={"white"}
                     textFormat={optionTextFormatting.pricingStyling}
-                    buttons={[buttonStyles.whiteOnRed, buttonStyles.whiteOnYellow, buttonStyles.whiteOnBlue,]}
+                    buttons={[buttonStyles.whiteOnRed, buttonStyles.whiteOnYellow, buttonStyles.whiteOnBlue]}
                     buttonText={buttonStyles.text.select}
                     redirect="/payment"
                 />
             </div>
             <div className="red perksArea">
-                <SectionMenu />
+                <SectionMenu
+                    menuTextColor="red"
+                    menuBackground="black"
+                    disablePerks="true"
+                />
                 <OptionsContent
                     optionData={perksData}
                     headingColors={["white"]}
