@@ -1,9 +1,12 @@
 import React from 'react';
 import '../views.css';
-import PerksContent from '../../components/perks-component/PerksContent';
+import OptionsContent from '../../components/options-component/OptionsContent';
 import ContactContent from '../../components/contact-component/ContactContent';
 import SectionMenu from '../../components/section-menu/SectionMenu';
-import PricingContent from '../../components/pricing-component/PricingContent';
+import perksData from '../../data/perksData';
+import pricingData from '../../data/pricingData';
+import buttonStyles from '../../data/buttonStyles';
+import optionTextFormatting from '../../data/optionTextFormatting';
 
 
 const Pricing = () => {
@@ -12,17 +15,26 @@ const Pricing = () => {
 
         <div className="landingPage">
             <div className="black pricingArea">
-                <SectionMenu/>
-                <PricingContent/>
-            </div>
-            <div className="red sectionArea">
-                <SectionMenu/>
-                <PerksContent
-                headingColor1="white"
-                headingColor2="white"
-                headingColor3="white"
-                textColor={"black"}
+                <SectionMenu />
+                <OptionsContent
+                    optionData={pricingData}
+                    headingColors={["red", "yellow", "blue"]}
+                    detailsColor={"white"}
+                    textFormat={optionTextFormatting.pricingStyling}
+                    buttons={[buttonStyles.whiteOnRed, buttonStyles.whiteOnYellow, buttonStyles.whiteOnBlue,]}
+                    buttonText={buttonStyles.text.select}
+                    redirect="/payment"
                 />
+            </div>
+            <div className="red perksArea">
+                <SectionMenu />
+                <OptionsContent
+                    optionData={perksData}
+                    headingColors={["white"]}
+                    detailsColor={"black"}
+                    textFormat={optionTextFormatting.perksStyling}
+                />
+
             </div>
             <div className="purple contactArea">
                 <ContactContent />

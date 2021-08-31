@@ -22,6 +22,14 @@
   
     min-height: 1080px;
 }
+.perksArea{
+
+    min-height: 1229px;
+}
+.pricingArea{
+
+    min-height: 1890px;
+}
 .contactArea{
   
     min-height: 538px;

@@ -3,6 +3,7 @@ import './sectionMenu.css'
 import AppButton from '../../buttons/AppButton';
 
 const SectionMenu = (props) => {
+
     return (
         <div className="sectionMenu">
             <div className="expConMenu">
@@ -12,12 +13,11 @@ const SectionMenu = (props) => {
                 <span>EXP|CON</span>
             </div>
             {
-                props.buttonStyle &&
+                props.button &&
                 <div className="tryNowButton">
                     <AppButton
-                        buttonStyle={props.buttonStyle}
+                        button = {props.button}
                         buttonText={props.buttonText}
-                        textColor={props.textColor}
                         redirect="/pricing"
                     ></AppButton>
                 </div>

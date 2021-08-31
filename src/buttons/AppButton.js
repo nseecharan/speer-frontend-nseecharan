@@ -1,11 +1,13 @@
 import React from 'react';
 import './appButtons.scss';
-import {useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const AppButton = (props) => {
 
     const history = useHistory();
     const redirect = props.redirect ? props.redirect : '/';
+    const {background, textColor} = props.button;
+    const text = props.buttonText;
 
     function routeClick() {
         history.push(redirect);
@@ -13,12 +15,12 @@ const AppButton = (props) => {
 
     return (
         <button
-            className={props.buttonStyle === 'white' ? "whiteButton " + props.textColor + "Text" : 'btn-mix'}
-            data-text={!props.buttonText ? "TRY IT NOW" : props.buttonText}
+            className={background !== 'special' ? background + " standard " + textColor + "Text" : 'btn-mix'}
+            data-text={text}
             onClick={routeClick}
         >
         </button>
     )
 }
 
-export default AppButton
+export default AppButton;

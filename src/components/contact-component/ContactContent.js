@@ -8,7 +8,7 @@ const ContactContent = () => {
 
         <div className="whiteText">
             <div className="emailLink">
-                <a className="s35" href="support@experienceconcerts.co"><i class="bi bi-envelope-fill"></i>support@experienceconcerts.co</a>
+                <a className="s35" href="support@experienceconcerts.co"><i className="bi bi-envelope-fill"></i>support@experienceconcerts.co</a>
             </div>
             <div className="footer">
                 <h4 className="s48">EXP|CON</h4>

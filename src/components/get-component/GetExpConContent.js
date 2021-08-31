@@ -2,6 +2,7 @@ import React from 'react';
 import AppButton from '../../buttons/AppButton';
 import './getExpConContent.css';
 import '../componentText.css';
+import buttonStyles from '../../data/buttonStyles';
 
 const GetExpConContent = () => {
 
@@ -14,10 +15,10 @@ const GetExpConContent = () => {
                     <h6 className="whiteText s51-61">Purchase and download the app.</h6>
                 </div>
                 <div className="buyButton">
-                    <AppButton 
-                    buttonStyle="special" 
-                    textColor="red"
-                    redirect="/pricing"/>
+                    <AppButton
+                        button={buttonStyles.special}
+                        buttonText={buttonStyles.text.tryNow}
+                        redirect="/pricing" />
                 </div>
             </div>
         </div>
