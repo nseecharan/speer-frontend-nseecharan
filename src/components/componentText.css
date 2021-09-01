@@ -13,6 +13,11 @@
     text-align: center;
 }
 /*the vairous text dimensions for the section content*/
+.s22{
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 2.4px;
+}
 .s24 {
     font-size: 24px;
     line-height: 29px;
@@ -32,6 +37,16 @@
     font-size: 35px;
     line-height: 43px;
     letter-spacing: 3.5px;
+}
+.s37{
+    font-size: 37px;
+    line-height: 45px;
+    letter-spacing: 3.7px;
+}
+.s45{
+    font-size: 45px;
+    line-height: 71px;
+    letter-spacing: 4.5px;
 }
 .s47 {
     font-size: 47px;

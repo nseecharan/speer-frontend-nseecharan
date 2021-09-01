@@ -16,8 +16,9 @@ const LandingPage = () => {
 
     return (
         <div className="landingPage">
-            <div className="red sectionArea">
+            <div className="sectionArea">
                 <SectionMenu
+                    buttonId="heroMenuBtn"
                     menuTextColor="white"
                     menuBackground="blue"
                 />
@@ -25,6 +26,7 @@ const LandingPage = () => {
             </div>
             <div className="red sectionArea">
                 <SectionMenu
+                    buttonId="soundMenuBtn"
                     button={buttonStyles.redOnWhite}
                     buttonText={buttonStyles.text.tryNow}
                     menuTextColor="red"
@@ -34,6 +36,7 @@ const LandingPage = () => {
             </div>
             <div className="yellow sectionArea">
                 <SectionMenu
+                    buttonId="imageMenuBtn"
                     button={buttonStyles.yellowOnWhite}
                     buttonText={buttonStyles.text.tryNow}
                     menuTextColor="yellow"
@@ -42,6 +45,7 @@ const LandingPage = () => {
             </div>
             <div className="black perksArea">
                 <SectionMenu
+                    buttonId="perksMenuBtn"
                     button={buttonStyles.special}
                     buttonText={buttonStyles.text.tryNow}
                     menuTextColor="white"
@@ -57,6 +61,7 @@ const LandingPage = () => {
             </div>
             <div className="blue sectionArea">
                 <SectionMenu
+                    buttonId="reviewsMenuBtn"
                     button={buttonStyles.blueOnWhite}
                     buttonText={buttonStyles.text.tryNow}
                     menuTextColor="blue"
@@ -66,6 +71,7 @@ const LandingPage = () => {
             </div>
             <div className="black sectionArea">
                 <SectionMenu
+                    buttonId="getEXMenuBtn"
                     menuTextColor="white"
                     menuBackground="blue"
                 ></SectionMenu>

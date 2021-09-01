@@ -19,6 +19,7 @@ const OptionsContent = (props) => {
                     return (
                         <OptionContent
                             key={index}
+                            buttonId={"optionBtn" + index}
                             option={option}
                             headingColor={props.headingColors[index]}
                             detailsColor={props.detailsColor}

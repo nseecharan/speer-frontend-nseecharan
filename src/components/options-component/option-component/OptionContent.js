@@ -22,6 +22,7 @@ const OptionContent = (props) => {
             }
             {props.button !== undefined &&
                 <AppButton
+                    buttonId={props.buttonId}
                     button={props.button}
                     buttonText={props.buttonText}
                     redirect={props.redirect}

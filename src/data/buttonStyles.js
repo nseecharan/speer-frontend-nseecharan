@@ -7,6 +7,7 @@ const buttonStyles = {
         tryNow: "TRY IT NOW",
         seeDemo: "SEE DEMO",
         select: "SELECT ",
+        download:"DOWNLOAD"
     },
 
     //corlor presets

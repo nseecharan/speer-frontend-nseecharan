@@ -73,35 +73,32 @@ $fuchsia-color: #d1346e;
   font-weight: bold;
   letter-spacing: 1.8px;
   opacity: 1;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-
+  overflow: hidden;
+  position: relative;
   &::after {
     background: none;
     content: attr(data-text);
   }
 }
+
+/*white button hover effect*/
+
 .standard::before {
   --size: 0;
-  content: '';
-  //position: absolute;
+  content: "";
+  position: absolute;
   left: var(--x);
   top: var(--y);
   width: var(--size);
   height: var(--size);
   background: radial-gradient(circle closest-side, #4405f7, transparent);
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  transition: width .2s ease, height .2s ease;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
 }
 .standard:hover::before {
   --size: 400px;
 }
-
-/*white button hover effect*/
-
 
 .white {
   background: $white-color;

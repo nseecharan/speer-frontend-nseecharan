@@ -1,31 +1,34 @@
-.soundText{
+.soundText {
     position: absolute;
     color: white;
     width: 60%;
     margin: 22em auto;
     padding: 3em;
 }
-.speakerDisplay{
-
-    left: 55%;
-    padding-top: 8em;
-    position: absolute;
+.speakerDisplay {
+    max-width: 500px;
+    position: relative;
+    left: 60%;
+    transform: translateY(17em);
 }
-.rSpeaker{
-
-    padding-top: 15em;
+.rSpeaker {
+    left: 63%;
+    transform: translateY(-22em);
 }
-.lSpeaker,.rSpeaker{
-    width: 20vw;
+.lSpeaker {
+    transform: translateY(-6em);
 }
-.audioButton{
-
+.lSpeaker,
+.rSpeaker,
+.audioButton {
+    position: relative;
+}
+.audioButton {
     border: 2px solid white;
     border-radius: 100px;
     width: 7em;
     height: 7em;
     font-weight: bold;
-    position: absolute;
-    margin-top: 33em;
-    margin-left: 15em;
+    transform: translateY(-11em);
+    left: -11%;
 }
