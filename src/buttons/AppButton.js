@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './appButtons.scss';
 import { useHistory } from 'react-router-dom';
 
@@ -15,16 +15,18 @@ const AppButton = (props) => {
     }
 
     //updates the properties in the element, but the properties does not update the position css variables
-    /*
+   // /*
     useEffect(() => {
-        document.querySelector("#" + buttonId).onMouseMove = function (e) {
+        document.querySelector("#" + buttonId).onmousemove = function (e) {
             var x = e.pageX - e.target.offsetLeft;
             var y = e.pageY - e.target.offsetTop;
             e.target.style.setProperty('--x', x + 'px');
             e.target.style.setProperty('--y', y + 'px');
         };
+
+        console.log(buttonId)
     })
-    */
+   // */
     
     return (
         <button id={buttonId}

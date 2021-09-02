@@ -1,25 +1,28 @@
-.slide1{
-
-    background-image: url('../../images/Image 1.png');
+.slide1 {
+    background-image: url("../../images/Image 1.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 1080px;
 }
-.slide2{
-
-    background-image: url('../../images/Image 2.png');
+.slide2 {
+    background-image: url("../../images/Image 2.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 1080px;
 }
-.slide3{
-
-    background-image: url('../../images/Image 3.png');
+.slide3 {
+    background-image: url("../../images/Image 3.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 1080px;
 }
-.carouselArea{
-
+.carouselArea {
     min-height: 20em;
+}
+.carousel-indicators button {
+    background-color: white !important;
+    width: 2em !important;
+    height: 2em !important;
+    border-radius: 251px !important;
+    border: none !important;
 }

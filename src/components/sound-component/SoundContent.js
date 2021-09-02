@@ -14,7 +14,7 @@ const SoundContent = () => {
                 <h4 className="whiteText s74">SUPERIOR SOUND</h4>
                 <h6 className="blackText s51-61">Experience live versions of your favourite songs.</h6>
                 <AppButton
-                    buttonId="soundSeeDemoBtn"
+                    buttonId={"soundSeeDemoBtn"}
                     button={buttonStyles.fuchsiaOnWhite}
                     buttonText="SEE DEMO"
                 />
@@ -23,7 +23,6 @@ const SoundContent = () => {
             
                 <img className="lSpeaker" src={leftSpeaker} alt="left speaker" />
                 <img className="rSpeaker" src={rightSpeaker} alt="right speaker" />
-                <button className="audioButton">CLICK</button>
             </div>
         </div>
     );

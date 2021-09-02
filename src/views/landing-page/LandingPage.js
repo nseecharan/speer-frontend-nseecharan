@@ -11,6 +11,7 @@ import ContactContent from '../../components/contact-component/ContactContent';
 import perksData from '../../data/perksData';
 import optionTextFormatting from '../../data/optionTextFormatting';
 import ReviewsContent from '../../components/reviews-component/ReviewsContent';
+import ImageContent from '../../components/image-component/ImageContent';
 
 const LandingPage = () => {
 
@@ -42,6 +43,7 @@ const LandingPage = () => {
                     menuTextColor="yellow"
                     menuBackground="black"
                 ></SectionMenu>
+                <ImageContent/>
             </div>
             <div className="black perksArea">
                 <SectionMenu

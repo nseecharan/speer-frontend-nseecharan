@@ -8,7 +8,7 @@ const HeroCarousel = () => {
     return (
         <div className="carouselArea">
             <HeroContent />
-            <Carousel>
+            <Carousel controls={false} pause={false}>
                 <Carousel.Item interval={10000}>
                     <div className="slide1"
                         alt="First slide"

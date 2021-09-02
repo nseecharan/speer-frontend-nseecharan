@@ -1,8 +1,8 @@
 .optionDisplay {
-    position: absolute;
     color: white;
     width: 100%;
-    margin: 15em auto;
+    margin: 0 auto 15em auto;
+    padding-top: 20em;
 }
 
 .options {
@@ -10,23 +10,12 @@
     margin: 0em 4em;
 }
 
-.option,
-.firstOption,
-.lastOption {
+.option{
     max-width: 433px;
 }
 .option {
     margin: 0 auto;
 }
-/*
-.firstOption {
-    margin: 0 auto 0 0;
-}
-.lastOption {
-    margin: 0 0 0 auto;
-}
-*/
-
 .rating {
     color: black;
 }
@@ -37,7 +26,7 @@ h3 {
 }
 
 .optionTitle {
-    margin: 4em;
+    margin: 0 4em 4em 4em;
 }
 .underline {
     border-bottom: 4px solid;
@@ -46,10 +35,34 @@ h3 {
 
 /*create media breakpoint*/
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
     .options {
         display: block;
         overflow-y: auto;
         height: 30em;
+    }
+    .option{
+
+        max-width: 700px;
+    }
+    .s47-64 {
+        font-size: 6vw;
+    }
+    .s47 {
+        font-size: 6vw;
+    }
+    .s51-62{
+
+        font-size: 5vw;
+    }
+    .s51-80 {
+        font-size: 5vw;
+    }
+    .s74 {
+        font-size: 6vw;
+    }
+    .s134{
+
+        font-size: 6vw;
     }
 }

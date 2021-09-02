@@ -45,7 +45,7 @@ const SectionMenu = (props) => {
                         button={props.button}
                         buttonText={props.buttonText}
                         redirect="/pricing"
-                    ></AppButton>
+                    />
                 </div>
             }
             <div className={"sectionMenu " + scaleHeight}>

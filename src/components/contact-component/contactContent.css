@@ -19,9 +19,10 @@
         font-size: 4vw;
     }
     .emailLink {
-        padding: 5em 0;
+        padding: 10em 0 5em 0;
         width: max-content;
-        margin: 10em auto;
+        margin:auto;
+
     }
     .footer {
         margin: auto;

@@ -83,12 +83,17 @@ $fuchsia-color: #d1346e;
 
 /*white button hover effect*/
 
+.standard:hover{
+
+  background: #f72359;
+  color: white;
+}
 .standard::before {
   --size: 0;
   content: "";
   position: absolute;
-  left: var(--x);
-  top: var(--y);
+  left: var(--x,0);
+  top: var(--y,0);
   width: var(--size);
   height: var(--size);
   background: radial-gradient(circle closest-side, #4405f7, transparent);
