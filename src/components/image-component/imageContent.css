@@ -1,6 +1,8 @@
 :root {
     --xpos: 0;
     --ypos: 0;
+    --masks: radial-gradient(circle closest-side, transparent, transparent);
+    --masksPositions: 0 0;
 }
 
 .imageBg {
@@ -10,13 +12,22 @@
     background-position-x: 100%;
     background-position-y: 60%;
     min-height: 1080px;
-    mask-repeat: no-repeat;
-    mask-image: radial-gradient(circle closest-side, black 50%, transparent 50.5%) !important;
-    mask-position:var(--x,0) var(--y,0) !important;
-    
-    /*transform: translate(-50%, -50%) !important;*/
-    
-}
-.imageBg::before {
-    mask-position: 0px 0px !important;
+    mask-repeat: no-repeat !important;
+    mask-image: radial-gradient(circle closest-side, black 30%, transparent 30.5%), var(--masks, "") !important;
+    mask-position: var(--x, 0) var(--y, 0), var(--masksPositions, 0 0) !important;
+
+    /*
+    background-image: url("../../images/Image 4.png");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position-x: 100%;
+    background-position-y: 60%;
+    min-height: 1080px;
+    mask-repeat: no-repeat !important;
+    mask-image: 
+    radial-gradient(circle closest-side, black 50%, transparent 50.5%), 
+    radial-gradient(circle closest-side, black 50%, transparent 50.5%), 
+    radial-gradient(circle closest-side, black 50%, transparent 50.5%) !important;
+    mask-position: 0 0, 322.5px 262px, -399.5px 351px !important;
+    */
 }

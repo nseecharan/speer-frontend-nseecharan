@@ -14,8 +14,6 @@ const AppButton = (props) => {
         history.push(redirect);
     }
 
-    //updates the properties in the element, but the properties does not update the position css variables
-   // /*
     useEffect(() => {
         document.querySelector("#" + buttonId).onmousemove = function (e) {
             var x = e.pageX - e.target.offsetLeft;
@@ -23,11 +21,8 @@ const AppButton = (props) => {
             e.target.style.setProperty('--x', x + 'px');
             e.target.style.setProperty('--y', y + 'px');
         };
-
-        console.log(buttonId)
     })
-   // */
-    
+  
     return (
         <button id={buttonId}
             className={background !== 'special' ? "standard " + background + " " + textColor + "Text" : 'btn-mix'}
