@@ -36,14 +36,16 @@ const LandingPage = () => {
                 <SoundContent />
             </div>
             <div className="yellow sectionArea">
-                <SectionMenu
-                    buttonId="imageMenuBtn"
-                    button={buttonStyles.yellowOnWhite}
-                    buttonText={buttonStyles.text.tryNow}
-                    menuTextColor="yellow"
-                    menuBackground="black"
-                ></SectionMenu>
-                <ImageContent/>
+                <ImageContent />
+                <div className="yellowSectionMenu">
+                    <SectionMenu
+                        buttonId="imageMenuBtn"
+                        button={buttonStyles.yellowOnWhite}
+                        buttonText={buttonStyles.text.tryNow}
+                        menuTextColor="yellow"
+                        menuBackground="black"
+                    ></SectionMenu>
+                </div>
             </div>
             <div className="black perksArea">
                 <SectionMenu

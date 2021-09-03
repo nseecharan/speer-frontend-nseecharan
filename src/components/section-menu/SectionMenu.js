@@ -9,7 +9,7 @@ import { useHistory } from 'react-router';
 const SectionMenu = (props) => {
 
     const history = useHistory();
-    const defaultTextColor = props.defaultTextColor ? props.defaultTextColor : "whiteText";
+    const defaultTextColor = props.defaultTextColor ? props.defaultTextColor : "white";
 
     //using state management to track what css animation classes are applied to the elements
     //with the sectionMenu, menuCircle, and menuOptions classes
