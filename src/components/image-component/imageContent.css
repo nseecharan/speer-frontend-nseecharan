@@ -8,15 +8,12 @@
     background-position-y: 60%;
     min-height: 1080px;
     mask-repeat: no-repeat !important;
-    mask-image: radial-gradient(circle closest-side, black 0%, transparent 0%), var(--masks, "") !important;
-    mask-position: var(--x, 0) var(--y, 0), var(--masksPositions, 0 0) !important;
+    mask-image: var(--masks, "") !important;
+    mask-position: var(--masksPositions, 0 0) !important;
     position: absolute;
     width: 100%;
     margin-top: -148px;
     cursor: none;
-}
-.imageBg:hover {
-    mask-image: radial-gradient(circle closest-side, black 5%, transparent 5.1%), var(--masks, "") !important;
 }
 .imageText {
     max-width: 51em;
@@ -28,26 +25,4 @@
     margin: 468px 0 0 30%;
     max-width: 51em;
     pointer-events: none;
-}
-.cursor {
-    transform: translate(var(--x, 0), var(--y, 0));
-    text-align: center;
-    font-size: 2em;
-    border: 4px solid;
-    color: black;
-    z-index: 1000;
-    margin: -80px auto 0 auto;
-    width: max-content;
-    height: max-content;
-    border-radius: 50%;
-    pointer-events: none;
-    padding: 0.5em;
-    position: relative;
-    top: 465px;
-    transition: opacity 0.3s ease, transform 0.3s ease-out;
-    display: var(--display, block);
-    opacity: var(--cursorOpacity, 0);
-}
-.cursorText {
-    margin: 30px auto;
 }

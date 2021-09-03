@@ -26,13 +26,15 @@ const LandingPage = () => {
                 <HeroCarousel></HeroCarousel>
             </div>
             <div className="red sectionArea">
-                <SectionMenu
-                    buttonId="soundMenuBtn"
-                    button={buttonStyles.redOnWhite}
-                    buttonText={buttonStyles.text.tryNow}
-                    menuTextColor="red"
-                    menuBackground="black"
-                />
+                <div className="redSectionMenu">
+                    <SectionMenu
+                        buttonId="soundMenuBtn"
+                        button={buttonStyles.redOnWhite}
+                        buttonText={buttonStyles.text.tryNow}
+                        menuTextColor="red"
+                        menuBackground="black"
+                    />
+                </div>
                 <SoundContent />
             </div>
             <div className="yellow sectionArea">

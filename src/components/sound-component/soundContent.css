@@ -4,22 +4,18 @@
     padding: 18em 3em 3em 3em;
 }
 .speakerDisplay {
-    max-width: 500px;
-    position: absolute;
-    right: 13%;
-    transform: translateY(-23em);
-    width: 34vw;
+    position: relative;
+    max-width: 47%;
+    margin: auto auto 0 50%;
+    display: inline-grid;
+    top: -30em;
+    min-width: 26%;
 }
 .rSpeaker {
-    left: 59%;
-    transform: translateY(8em);
-}
-.lSpeaker {
-    transform: translateY(-6em);
+    margin: -44% -6% 0 auto;
 }
 .lSpeaker,
 .rSpeaker {
-    max-width: 344px;
-    position: absolute;
-    width: 26vw;
+    width: 55%;
+    pointer-events: none;
 }
