@@ -26,7 +26,7 @@ const Payments = () => {
 
     //form Submit not implemented for this demo
     return (
-        <div>
+        <div className="paymentsPage">
             <SectionMenu
                 menuTextColor="red"
                 menuBackground="black"

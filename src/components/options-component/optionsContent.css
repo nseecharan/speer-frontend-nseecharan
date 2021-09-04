@@ -1,7 +1,7 @@
 .optionDisplay {
     color: white;
     width: 100%;
-   /* margin: 0 auto 15em auto;8*/
+    /* margin: 0 auto 15em auto;8*/
     /*padding-top: 20em;*/
 }
 
@@ -10,7 +10,7 @@
     margin: 0em 4em;
 }
 
-.option{
+.option {
     max-width: 433px;
 }
 .option {
@@ -19,12 +19,15 @@
 .rating {
     color: black;
 }
-
+.headerPadding {
+    padding-right: 2em;
+}
+.detailPadding {
+    padding-right: 2em;
+}
 h3 {
-    display: table-caption;
     margin-bottom: 1em;
 }
-
 .optionTitle {
     margin: 0 4em 4em 4em;
 }
@@ -41,7 +44,7 @@ h3 {
         overflow-y: auto;
         height: 30em;
     }
-    .option{
+    .option {
         max-width: 700px;
     }
 }

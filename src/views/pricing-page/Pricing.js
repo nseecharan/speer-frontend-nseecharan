@@ -14,7 +14,7 @@ const Pricing = () => {
 
     return (
 
-        <div className="landingPage">
+        <div className="pricingPage">
             <div className="black pricingArea">
                 <SectionMenu
                     menuTextColor="white"

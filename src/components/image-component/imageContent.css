@@ -26,3 +26,14 @@
     max-width: 51em;
     pointer-events: none;
 }
+@media (max-width:540px) {
+
+    .demoBtn {
+        padding: 20em 0 0 10%;
+    }
+    .blueHiddenText {
+        margin: 468px 0 0 10%;
+
+    }
+    
+}

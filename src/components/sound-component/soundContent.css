@@ -27,7 +27,7 @@
 @media (max-width: 1200px) {
     .speakerDisplay {
         position: relative;
-        width: 450px;
+        width: 100%;
         height: max-content;
         bottom: 1em;
         left: 0%;
@@ -45,7 +45,7 @@
         margin: 0px !important;
         transform: none !important;
         opacity: 1 !important;
-        top: 246px !important;
-        left: 144px !important;
+        top: 2vh !important;
+        left: 40% !important;
     }
 }
