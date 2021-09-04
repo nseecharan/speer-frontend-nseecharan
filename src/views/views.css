@@ -1,40 +1,40 @@
-.red{
-    background-color:#D34848;
-}
-  
-.blue{
-    background-color:#1FE1E9 ;
-}
-  
-.yellow{
-    background-color:#FFB33F;
+.red {
+    background-color: #d34848;
 }
 
-.purple{
-
-    background-color:#5E33D1;
+.blue {
+    background-color: #1fe1e9;
 }
-  
-.black{
+
+.yellow {
+    background-color: #ffb33f;
+}
+
+.purple {
+    background-color: #5e33d1;
+}
+
+.black {
     background-color: #191919;
 }
-.sectionArea{
-  
+.sectionArea {
     min-height: 1080px;
 }
-.perksArea{
-
+.perksArea {
     min-height: 1229px;
 }
-.pricingArea{
-
+.pricingArea {
     min-height: 1890px;
 }
-.contactArea{
-  
+.contactArea {
     min-height: 538px;
 }
-.pricingArea{
-
+.pricingArea {
     min-height: 1890px;
 }
+/*
+.landingPage,
+.pricingPage {
+    display: inline-block;
+}
+*/

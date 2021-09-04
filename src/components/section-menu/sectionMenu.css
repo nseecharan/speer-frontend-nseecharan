@@ -22,7 +22,7 @@ button {
     padding: 1em;
     position: absolute;
     z-index: 1000;
-    min-width: 340px;
+    min-width: 320px;
     min-height: 100px;
     overflow: hidden;
 }

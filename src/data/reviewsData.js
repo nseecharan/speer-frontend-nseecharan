@@ -12,14 +12,14 @@ const reviewsData = {
         },
         {
             optionHeading: "",
-            optionSubHeading: "ARTIST",
+            optionSubHeading: "PRODUCER",
             eyeCatchHeading: "",
             optionDetails: ["“Love it, it’s the Best.I can’t live without it!”"],
             rating: "★★★★★"
         },
         {
             optionHeading: "",
-            optionSubHeading: "ARTIST",
+            optionSubHeading: "MUSIC FAN",
             eyeCatchHeading: "",
             optionDetails: ["“Love it, it’s the Best.I can’t live without it!”"],
             rating: "★★★★★"

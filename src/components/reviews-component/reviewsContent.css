@@ -3,11 +3,14 @@
 }
 .userReviews {
     float: left;
+    width: 68%;
 }
 .reviewsImages {
-    max-width: 20%;
+    max-width: 500px;
     float: left;
-    margin: -2em auto auto 5em;
+    position: relative;
+    left: 5em;
+    top: -5em;
 }
 .topSpeaker {
     margin: auto auto auto -6em;
@@ -21,14 +24,31 @@
     height: min-content;
 }
 
-@media (max-width: 1400px) {
+
+@media (max-width: 1600px) {
+    .reviewLayout {
+        padding-top: 0em;
+    }
     .reviewsImages {
-        display: flex;
-        margin: -8em auto;
+        max-width: 170px;
+        position: relative;
+        left: 47vw;
+        top: 6em;
     }
     .topSpeaker,
     .bottomSpeaker {
-        margin: -4em auto;
-        width: 200%;
+        width: 100%;
+        height: min-content;
+        position: relative;
+    }
+    .topSpeaker {
+        margin: auto auto auto -2em;
+    }
+    .bottomSpeaker {
+        top: -2em;
+    }
+    .userReviews {
+        float: left;
+        width: 100%;
     }
 }
