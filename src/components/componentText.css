@@ -1,3 +1,8 @@
+.overflow{
+
+    overflow: hidden;
+}
+
 .subTitle {
     width: 831px;
     margin: 1em auto;
@@ -117,4 +122,43 @@
 
 .blackText {
     color: #191919;
+}
+
+@media (max-width: 1400px) {
+    .s47 {
+        font-size: 6vw;
+    }
+    .s47-64 {
+        font-size: 6vw;
+    }
+    .s51-62{
+
+        font-size: 5vw;
+    }
+    .s51-80 {
+        font-size: 5vw;
+    }
+    .s74 {
+        font-size: 6vw;
+    }
+    .s134{
+
+        font-size: 6vw;
+    }
+}
+@media (max-width: 820px) {
+    .s37 {
+        font-size: 5vw;
+    }
+    .s45 {
+        font-size: 5vw;
+    }
+}
+@media (max-width: 565px) {
+    .s22 {
+        font-size: 4vw;
+    }
+    .s45 {
+        font-size: 4.5vw;
+    }
 }

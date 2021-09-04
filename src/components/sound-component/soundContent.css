@@ -1,21 +1,51 @@
 .soundText {
     color: white;
-    width: 60%;
+    max-width: 67%;
     padding: 18em 3em 3em 3em;
+    margin: 0px;
 }
 .speakerDisplay {
     position: relative;
-    max-width: 47%;
-    margin: auto auto 0 50%;
-    display: inline-grid;
-    top: -30em;
-    min-width: 26%;
+    width: 450px;
+    height: max-content;
+    bottom: 28em;
+    left: 65%;
+    cursor: none;
 }
 .rSpeaker {
-    margin: -44% -6% 0 auto;
+    margin: 0em 0px 0px 0px;
+}
+.lSpeaker {
+    margin: -18em 0 0 0;
 }
 .lSpeaker,
 .rSpeaker {
-    width: 55%;
     pointer-events: none;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .speakerDisplay {
+        position: relative;
+        width: 450px;
+        height: max-content;
+        bottom: 1em;
+        left: 0%;
+        margin-bottom: 3em;
+        cursor: pointer;
+    }
+    .soundText {
+        color: white;
+        max-width: 67%;
+        padding: 14em 3em 3em 3em;
+        margin: 0px;
+    }
+    /*temporarily disable interactive cursor's mouse tracking for mobile */
+    .cursorSound {
+        margin: 0px !important;
+        transform: none !important;
+        opacity: 1 !important;
+        top: 246px !important;
+        left: 144px !important;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../views.css';
+import './pricing.css';
 import OptionsContent from '../../components/options-component/OptionsContent';
 import ContactContent from '../../components/contact-component/ContactContent';
 import SectionMenu from '../../components/section-menu/SectionMenu';
@@ -19,15 +20,17 @@ const Pricing = () => {
                     menuTextColor="white"
                     menuBackground="blue"
                 />
-                <OptionsContent
-                    optionData={pricingData}
-                    headingColors={["red", "yellow", "blue"]}
-                    detailsColor={"white"}
-                    textFormat={optionTextFormatting.pricingStyling}
-                    buttons={[buttonStyles.whiteOnRed, buttonStyles.whiteOnYellow, buttonStyles.whiteOnBlue]}
-                    buttonText={buttonStyles.text.select}
-                    redirect="/payment"
-                />
+                <div className="optionsLayout">
+                    <OptionsContent
+                        optionData={pricingData}
+                        headingColors={["red", "yellow", "blue"]}
+                        detailsColor={"white"}
+                        textFormat={optionTextFormatting.pricingStyling}
+                        buttons={[buttonStyles.whiteOnRed, buttonStyles.whiteOnYellow, buttonStyles.whiteOnBlue]}
+                        buttonText={buttonStyles.text.select}
+                        redirect="/payment"
+                    />
+                </div>
             </div>
             <div className="red perksArea">
                 <SectionMenu
@@ -35,13 +38,14 @@ const Pricing = () => {
                     menuBackground="black"
                     disablePerks="true"
                 />
-                <OptionsContent
-                    optionData={perksData}
-                    headingColors={["white"]}
-                    detailsColor={"black"}
-                    textFormat={optionTextFormatting.perksStyling}
-                />
-
+                <div className="optionsLayout">
+                    <OptionsContent
+                        optionData={perksData}
+                        headingColors={["white"]}
+                        detailsColor={"black"}
+                        textFormat={optionTextFormatting.perksStyling}
+                    />
+                </div>
             </div>
             <div className="purple contactArea">
                 <ContactContent />

@@ -90,19 +90,4 @@ input:focus {
         text-align: center;
     }
 }
-@media (max-width: 820px) {
-    .s45 {
-        font-size: 5vw;
-    }
-    .s37 {
-        font-size: 5vw;
-    }
-}
-@media (max-width: 565px) {
-    .s45 {
-        font-size: 4.5vw;
-    }
-    .s22 {
-        font-size: 4vw;
-    }
-}
+

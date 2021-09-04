@@ -16,7 +16,7 @@ const InteractiveCursor = (props) => {
         curStyle.border = "4px solid";
         curStyle.color = props.color;
         curStyle.zIndex = "1000";
-        curStyle.margin = "-80px auto 0 auto";
+        curStyle.margin = props.margin;
         curStyle.width = "max-content";
         curStyle.height = "max-content";
         curStyle.borderRadius = "50%";
@@ -25,6 +25,7 @@ const InteractiveCursor = (props) => {
         curStyle.position = "relative";
         curStyle.top = props.yOffset;
         curStyle.left = props.xOffset;
+        curStyle.opacity ="0";
         curStyle.transition = "opacity 0.3s ease, transform 0.3s ease-out";
 
         document.querySelector("." + sectionClass).onmousemove = function (e) {
@@ -36,7 +37,6 @@ const InteractiveCursor = (props) => {
             //get height and width of element to help with centering the cursor
             var eleWidth = document.querySelector("." + sectionClass).clientWidth;
             var eleheight = document.querySelector("." + sectionClass).clientHeight;
-
             //update css properties related to the cursor
             document.querySelector("." + cursorClass).style.transform = "translate(" + (x - (eleWidth / 2)) + "px ," + (y - (eleheight / 2)) + "px)";
             document.querySelector("." + cursorClass).style.opacity = "1";

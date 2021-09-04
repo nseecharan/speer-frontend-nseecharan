@@ -1,8 +1,8 @@
 .optionDisplay {
     color: white;
     width: 100%;
-    margin: 0 auto 15em auto;
-    padding-top: 20em;
+   /* margin: 0 auto 15em auto;8*/
+    /*padding-top: 20em;*/
 }
 
 .options {
@@ -42,27 +42,6 @@ h3 {
         height: 30em;
     }
     .option{
-
         max-width: 700px;
-    }
-    .s47-64 {
-        font-size: 6vw;
-    }
-    .s47 {
-        font-size: 6vw;
-    }
-    .s51-62{
-
-        font-size: 5vw;
-    }
-    .s51-80 {
-        font-size: 5vw;
-    }
-    .s74 {
-        font-size: 6vw;
-    }
-    .s134{
-
-        font-size: 6vw;
     }
 }

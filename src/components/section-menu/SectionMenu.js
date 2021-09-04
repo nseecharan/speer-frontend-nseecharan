@@ -1,5 +1,5 @@
 import React from 'react';
-import './sectionMenu.css'
+import './sectionMenu.css';
 import '../componentText.css';
 import '../../views/views.css';
 import AppButton from '../../buttons/AppButton';

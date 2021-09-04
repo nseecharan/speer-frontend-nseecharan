@@ -37,10 +37,11 @@ const ImageContent = () => {
                 sectionClass={maskClass}
                 cursorText="REVEAL"
                 cursorClass="imageCursor"
+                color="black"
                 paddingOffset="0.5em"
                 xOffset=""
                 yOffset="465px"
-                color="black"
+                margin="-80px auto 0 auto"
             />
             <div className={maskClass}>
                 <div className="blueHiddenText">
