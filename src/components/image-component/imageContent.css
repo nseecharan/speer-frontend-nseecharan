@@ -1,0 +1,28 @@
+.imageBg {
+    --masks: radial-gradient(circle closest-side, transparent, transparent);
+    --masksPositions: 0 0;
+    background-image: url("../../images/Image 4.png");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position-x: 100%;
+    background-position-y: 60%;
+    min-height: 1080px;
+    mask-repeat: no-repeat !important;
+    mask-image: var(--masks, "") !important;
+    mask-position: var(--masksPositions, 0 0) !important;
+    position: absolute;
+    width: 100%;
+    margin-top: -148px;
+    cursor: none;
+}
+.imageText {
+    max-width: 51em;
+}
+.demoBtn {
+    padding: 20em 0 0 30%;
+}
+.blueHiddenText {
+    margin: 468px 0 0 30%;
+    max-width: 51em;
+    pointer-events: none;
+}

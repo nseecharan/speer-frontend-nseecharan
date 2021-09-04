@@ -1,0 +1,47 @@
+.optionDisplay {
+    color: white;
+    width: 100%;
+   /* margin: 0 auto 15em auto;8*/
+    /*padding-top: 20em;*/
+}
+
+.options {
+    display: flex;
+    margin: 0em 4em;
+}
+
+.option{
+    max-width: 433px;
+}
+.option {
+    margin: 0 auto;
+}
+.rating {
+    color: black;
+}
+
+h3 {
+    display: table-caption;
+    margin-bottom: 1em;
+}
+
+.optionTitle {
+    margin: 0 4em 4em 4em;
+}
+.underline {
+    border-bottom: 4px solid;
+    width: 3.2em;
+}
+
+/*create media breakpoint*/
+
+@media (max-width: 1400px) {
+    .options {
+        display: block;
+        overflow-y: auto;
+        height: 30em;
+    }
+    .option{
+        max-width: 700px;
+    }
+}

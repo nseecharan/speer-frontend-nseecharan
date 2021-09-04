@@ -1,6 +1,5 @@
 .buyNow{
     position: absolute;
-    z-index: 1;
     color: white;
     margin: 25em auto;
     padding: 3em;
@@ -14,8 +13,4 @@
 
     float: right;
     padding-top: 4em;
-}
-.getText div{
-
-    
 }

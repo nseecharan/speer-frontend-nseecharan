@@ -1,11 +1,30 @@
-.emailLink{
+.emailLink {
     padding: 10em;
+    display: flex;
 }
-.footer{
+.footer {
     position: absolute;
     text-align: center;
-    z-index: 1;
     color: white;
     margin: auto;
     width: 100%;
+}
+.support {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+@media (max-width: 940px) {
+    .support {
+        font-size: 4vw;
+    }
+    .emailLink {
+        padding: 10em 0 5em 0;
+        width: max-content;
+        margin:auto;
+
+    }
+    .footer {
+        margin: auto;
+    }
 }

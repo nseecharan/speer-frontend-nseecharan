@@ -1,8 +1,15 @@
 $bg-color: #222;
 $color-blur: 4em;
+$red-color: #d34848;
+$yellow-color: #ffb33f;
+$blue-color: #1fe1e9;
+$purple-color: #5e33d1;
+$white-color: white;
+$black-color: #191919;
+$fuchsia-color: #d1346e;
 
 [class*="btn-"] {
-  outline:0;
+  outline: 0;
   width: 248px;
   height: 62px;
   border-radius: 79px;
@@ -13,11 +20,13 @@ $color-blur: 4em;
   position: relative;
   -webkit-tap-highlight-color: transparent;
   transition: all 500ms ease-in-out;
-  &::after, &::before { 
+  &::after,
+  &::before {
     content: "";
     position: absolute;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background: rgba(255, 255, 255, 1);
   }
 }
@@ -36,10 +45,8 @@ $color-blur: 4em;
   &::before {
     background: transparent;
     border-radius: 100%;
-    box-shadow: -6em 0em $color-blur 2em #1fe1e9, 
-                -2em 0em $color-blur 2em #5e33d1, 
-                2em 0em $color-blur 2em #d34848, 
-                6em 0em $color-blur 2em #ffb33f;
+    box-shadow: -6em 0em $color-blur 2em #1fe1e9, -2em 0em $color-blur 2em #5e33d1, 2em 0em $color-blur 2em #d34848,
+      6em 0em $color-blur 2em #ffb33f;
     width: 0;
     height: 0;
     animation: mix 5s linear infinite;
@@ -47,55 +54,92 @@ $color-blur: 4em;
 }
 
 @keyframes mix {
-  
   25% {
-    box-shadow: -6em -4em $color-blur 5em #1fe1e9, 
-                -3em 0em $color-blur 5em #5e33d1, 
-                4em 1em $color-blur 2em #d34848, 
-                8em 0em $color-blur 6em #ffb33f;
+    box-shadow: -6em -4em $color-blur 5em #1fe1e9, -3em 0em $color-blur 5em #5e33d1, 4em 1em $color-blur 2em #d34848,
+      8em 0em $color-blur 6em #ffb33f;
   }
-  
+
   50% {
-    box-shadow: -5em 5em $color-blur 5em #1fe1e9, 
-    -4em -5em $color-blur 5em #5e33d1, 
-    6em -2em $color-blur 3em #d34848, 
-    6em 1em $color-blur 6em #ffb33f;
+    box-shadow: -5em 5em $color-blur 5em #1fe1e9, -4em -5em $color-blur 5em #5e33d1, 6em -2em $color-blur 3em #d34848,
+      6em 1em $color-blur 6em #ffb33f;
   }
 }
 
-.whiteButton{
+.standard {
   width: 248px;
   height: 62px;
   border-radius: 79px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 1.8px;
-  background: #FFFFFF;
   opacity: 1;
+  overflow: hidden;
+  position: relative;
   &::after {
     background: none;
     content: attr(data-text);
   }
 }
 
-.redText{
-  color:#D34848;
+/*white button hover effect*/
+
+.standard:hover{
+
+  background: #f72359;
+  color: white;
+}
+.standard::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x,0);
+  top: var(--y,0);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, transparent);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.standard:hover::before {
+  --size: 400px;
 }
 
-.blueText{
-  color:#1FE1E9 ;
+.white {
+  background: $white-color;
+}
+.red {
+  background: $red-color;
+}
+.yellow {
+  background: $yellow-color;
+}
+.blue {
+  background: $blue-color;
+}
+.purple {
+  background: $purple-color;
+}
+.black {
+  background: $black-color;
 }
 
-.yellowText{
-  color:#FFB33F;
+.redText {
+  color: $red-color;
+}
+.blueText {
+  color: $blue-color;
 }
 
-.purpleText{
-
-  color:#5E33D1;
+.yellowText {
+  color: $yellow-color;
 }
-
-.blackText{
-  color: #191919;
+.purpleText {
+  color: $purple-color;
 }
-
+.blackText {
+  color: $black-color;
+}
+.fuchsiaText {
+  color: $fuchsia-color;
+}
