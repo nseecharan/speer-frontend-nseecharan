@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './sectionMenu.css';
 import '../componentText.css';
 import '../../views/views.css';
@@ -35,12 +35,25 @@ const SectionMenu = (props) => {
         }
     }
 
+    //detect the width of the view to reconfigure the layout of the menu title
+
+    const [widnowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+
+        window.addEventListener("resize", (e) => {
+
+            return setWindowWidth(current => current = e.target.innerWidth)
+        })
+    })
+
     return (
         <>
             {
                 props.button &&
                 <div className="tryNowButton">
                     <AppButton
+                        buttonPosition={props.buttonPosition}
                         buttonId={props.buttonId}
                         button={props.button}
                         buttonText={props.buttonText}
@@ -55,15 +68,20 @@ const SectionMenu = (props) => {
                     <button onClick={clickMenu}>
                         <i className={"bi bi-list " + menuColors.text + "Text"}></i>
                     </button>
-                    <span className={menuColors.text + "Text"}>EXP|CON</span>
+                    {widnowWidth >= 570 &&
+                        <span className={menuColors.text + "Text"}>EXP|CON</span>
+                    }
+                    {widnowWidth <= 570 &&
+                        <span className={"menuText " + menuColors.text + "Text"}>{circleAnimation === "openMenu" ? "EXP|CON" : ""}</span>
+                    }
                     <div className={"menuOptions " + textAnimation}>
-                        <p className={menuColors.text + "Text"}>WHAT IS IT</p>
+                        <p className={menuColors.text + "Text"}>{circleAnimation === "openMenu" ? "WHAT IS IT" : ""}</p>
                         <p className={props.disablePerks ? "disabled" : "menuItem"} onClick={e => {
                             if (!props.disablePerks) {
                                 history.push("/pricing")
                             }
-                        }}>PERKS</p>
-                        <p className="menuItem" onClick={e => { history.push("/pricing") }}>PRICING</p>
+                        }}>{circleAnimation === "openMenu" ? "PERKS" : ""}</p>
+                        <p className="menuItem" onClick={e => { history.push("/pricing") }}>{circleAnimation === "openMenu" ? "PRICING" : ""}</p>
                     </div>
                 </div>
             </div>

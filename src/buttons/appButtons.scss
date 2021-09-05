@@ -65,6 +65,17 @@ $fuchsia-color: #d1346e;
   }
 }
 
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.absolute-right {
+  position: absolute;
+  right: 0%;
+  margin: auto 16px;
+}
 .standard {
   width: 248px;
   height: 62px;
@@ -74,7 +85,7 @@ $fuchsia-color: #d1346e;
   letter-spacing: 1.8px;
   opacity: 1;
   overflow: hidden;
-  position: relative;
+  z-index: 1000;
   &::after {
     background: none;
     content: attr(data-text);
@@ -83,8 +94,7 @@ $fuchsia-color: #d1346e;
 
 /*white button hover effect*/
 
-.standard:hover{
-
+.standard:hover {
   background: #f72359;
   color: white;
 }
@@ -92,8 +102,8 @@ $fuchsia-color: #d1346e;
   --size: 0;
   content: "";
   position: absolute;
-  left: var(--x,0);
-  top: var(--y,0);
+  left: var(--x, 0);
+  top: var(--y, 0);
   width: var(--size);
   height: var(--size);
   background: radial-gradient(circle closest-side, #4405f7, transparent);

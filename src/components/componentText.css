@@ -1,5 +1,4 @@
-.overflow{
-
+.overflow {
     overflow: hidden;
 }
 
@@ -18,7 +17,7 @@
     text-align: center;
 }
 /*the vairous text dimensions for the section content*/
-.s22{
+.s22 {
     font-size: 22px;
     line-height: 34px;
     letter-spacing: 2.4px;
@@ -33,6 +32,7 @@
     line-height: 44px;
     letter-spacing: 2.2px; /*3.2*/
 }
+
 .s35 {
     font-size: 35px;
     line-height: 41px;
@@ -43,16 +43,18 @@
     line-height: 43px;
     letter-spacing: 3.5px;
 }
-.s37{
+
+.s37 {
     font-size: 37px;
     line-height: 45px;
     letter-spacing: 3.7px;
 }
-.s45{
+.s45 {
     font-size: 45px;
     line-height: 71px;
     letter-spacing: 4.5px;
 }
+
 .s47 {
     font-size: 47px;
     line-height: 57px;
@@ -63,11 +65,13 @@
     line-height: 64px;
     letter-spacing: 4.7px;
 }
+
 .s48 {
     font-size: 48px;
     line-height: 57px;
     letter-spacing: 4.8px;
 }
+
 .s51-62 {
     font-size: 51px;
     line-height: 62px;
@@ -83,6 +87,7 @@
     line-height: 80px;
     letter-spacing: 5.1px;
 }
+
 .s65 {
     font-size: 65px;
     line-height: 79px;
@@ -125,24 +130,19 @@
 }
 
 @media (max-width: 1400px) {
-    .s47 {
-        font-size: 6vw;
-    }
+    .s47,
     .s47-64 {
         font-size: 6vw;
     }
-    .s51-62{
-
-        font-size: 5vw;
-    }
+    .s51-62,
+    .s51-61,
     .s51-80 {
         font-size: 5vw;
     }
     .s74 {
         font-size: 6vw;
     }
-    .s134{
-
+    .s134 {
         font-size: 6vw;
     }
 }
@@ -161,12 +161,9 @@
     .s45 {
         font-size: 4.5vw;
     }
-    .s51-61{
 
-        font-size: 10vw;
+    .s65 {
+        font-size: 12vw;
     }
-    .s65{
 
-        font-size: 4vw;
-    }
 }

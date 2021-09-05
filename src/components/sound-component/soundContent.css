@@ -9,7 +9,7 @@
     width: 450px;
     height: max-content;
     bottom: 28em;
-    left: 65%;
+    left: 62%;
     cursor: none;
 }
 .rSpeaker {
@@ -36,7 +36,7 @@
     }
     .soundText {
         color: white;
-        max-width: 67%;
+        max-width: 100%;
         padding: 14em 3em 3em 3em;
         margin: 0px;
     }

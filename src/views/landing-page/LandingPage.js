@@ -1,6 +1,7 @@
 import React from 'react';
 import './landingPage.css';
 import '../views.css';
+import '../../interactive-cursor/interactiveCursor.css';
 import buttonStyles from '../../data/buttonStyles';
 import SectionMenu from '../../components/section-menu/SectionMenu'
 import HeroCarousel from '../../components/hero-carousel/HeroCarousel';
@@ -12,6 +13,7 @@ import perksData from '../../data/perksData';
 import optionTextFormatting from '../../data/optionTextFormatting';
 import ReviewsContent from '../../components/reviews-component/ReviewsContent';
 import ImageContent from '../../components/image-component/ImageContent';
+
 
 const LandingPage = () => {
 
@@ -35,17 +37,16 @@ const LandingPage = () => {
                 />
                 <SoundContent />
             </div>
-            <div className="yellow sectionArea">
+            <div className="yellow sectionArea overflowControl">
+                <SectionMenu
+                    buttonPosition="absolute-right"
+                    buttonId="imageMenuBtn"
+                    button={buttonStyles.yellowOnWhite}
+                    buttonText={buttonStyles.text.tryNow}
+                    menuTextColor="yellow"
+                    menuBackground="black"
+                ></SectionMenu>
                 <ImageContent />
-                <div className="yellowSectionMenu">
-                    <SectionMenu
-                        buttonId="imageMenuBtn"
-                        button={buttonStyles.yellowOnWhite}
-                        buttonText={buttonStyles.text.tryNow}
-                        menuTextColor="yellow"
-                        menuBackground="black"
-                    ></SectionMenu>
-                </div>
             </div>
             <div className="black perksArea">
                 <SectionMenu
