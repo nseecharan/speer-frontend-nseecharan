@@ -1,3 +1,7 @@
 .cursorText {
     margin: 30px auto;
 }
+.overflowControl {
+    overflow: hidden;
+    width: 100%;
+}

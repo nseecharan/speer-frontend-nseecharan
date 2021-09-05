@@ -15,14 +15,13 @@ button {
     opacity: 1;
     font-size: 48px;
     line-height: 57px;
-    z-index: 99999999;
 }
 .sectionMenu {
     color: white;
     padding: 1em;
     position: absolute;
     z-index: 1000;
-    min-width: 320px;
+    width: max-content;
     min-height: 100px;
     overflow: hidden;
 }
@@ -48,6 +47,9 @@ button {
 .disabled {
     color: black;
     cursor: auto;
+}
+.notBold {
+    font-weight: normal !important;
 }
 
 /*animation setting to scale the sectionMenu so that it does not overlap elements even when closed*/
@@ -83,29 +85,37 @@ button {
 @keyframes shrink {
     0% {
         height: 600px;
+        max-width: 100%;
         width: 550px;
+        min-width: min-content;
     }
-    50% {
+    80% {
         height: 600px;
+        max-width: 100%;
         width: 550px;
+        min-width: min-content;
     }
     100% {
         height: 100px;
-        width: 340px;
+        width: max-content;
     }
 }
 @keyframes scale {
     0% {
         height: 100px;
-        width: 340px;
+        width: max-content;
     }
-    50% {
+    20% {
         height: 600px;
+        max-width: 100%;
         width: 550px;
+        min-width: min-content;
     }
     100% {
         height: 600px;
+        max-width: 100%;
         width: 550px;
+        min-width: min-content;
     }
 }
 @keyframes menuOpen {

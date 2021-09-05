@@ -40,7 +40,7 @@ const ImageContent = () => {
                 color="black"
                 paddingOffset="0.5em"
                 xOffset=""
-                yOffset="465px"
+                yOffset="545px"
                 margin="-80px auto 0 auto"
             />
             <div className={maskClass}>
@@ -62,7 +62,6 @@ const ImageContent = () => {
                     />
                 </div>
             </div>
-
         </div>
     );
 

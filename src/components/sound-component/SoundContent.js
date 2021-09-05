@@ -42,7 +42,7 @@ const SoundContent = () => {
     //Note: some css rules temporarily disable the interactive cursor
 
     return (
-        <div>
+        <div className="overflowControl">
             <div className="soundText">
                 <h4 className="whiteText s74">SUPERIOR SOUND</h4>
                 <h6 className="blackText s51-61">Experience live versions of your favourite songs.</h6>

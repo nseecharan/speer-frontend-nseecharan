@@ -12,7 +12,7 @@
     mask-position: var(--masksPositions, 0 0) !important;
     position: absolute;
     width: 100%;
-    margin-top: -148px;
+    margin-top: -68px;
     cursor: none;
 }
 .imageText {
@@ -22,18 +22,15 @@
     padding: 20em 0 0 30%;
 }
 .blueHiddenText {
-    margin: 468px 0 0 30%;
+    margin: 388px 0 0 30%;
     max-width: 51em;
     pointer-events: none;
 }
-@media (max-width:540px) {
-
+@media (max-width: 540px) {
     .demoBtn {
         padding: 20em 0 0 10%;
     }
     .blueHiddenText {
-        margin: 468px 0 0 10%;
-
+        margin: 388px 0 0 10%;
     }
-    
 }
