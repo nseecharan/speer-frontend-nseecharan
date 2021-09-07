@@ -19,7 +19,7 @@ const Payments = () => {
     const currentYear = date.getFullYear();
     const expYears = [];
 
-    for (let i = (currentYear - 3); i < (currentYear + 3); i++) {
+    for (let i = currentYear; i < (currentYear + 3); i++) {
 
         expYears.push(i);
     }
